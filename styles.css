@@ -1,8 +1,8 @@
 
 body{
-	background-image: ;
+	background-image:url("");
 	color: #000305;
-	font-size:87.5%;/*Base font size is 14px*/
+	font-size:95%;/*Base font size is 14px*/
 	font-family: arial,'Lucida Sans Unicode';
 	line-height:1.5;
 	text-align:left;
@@ -41,9 +41,11 @@ a:hover,a:active{
 .mainHeader nav ul{
 	list-style: none;
 	margin: 0 auto;
+	margin-top: 0 auto;
+
 }
 .mainHeader nav ul li{
-	float: relative;
+	float: left;
 	display:inline;
 }
 .mainHeader nav a:link, .mainHeader nav a:visited{
@@ -83,7 +85,7 @@ a:hover,a:active{
 	border-radius: 3px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius:5px;
-	padding:3% 5%;
+	padding:2% 0%;
 	margin-top: 2%;
 }
 .topcontent img{
