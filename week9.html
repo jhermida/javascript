@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Direction-Aware Hover Effect with CSS3 and jQuery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Direction-Aware Hover Effect with CSS3 and jQuery" />
+        <meta name="keywords" content="hover, css3, jquery, effect, direction, aware, depending, thumbnails" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		<link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="js/modernizr.custom.97074.js"></script>
+        <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+    </head>
+    <body>
+        <div class="container">
+			<!-- Codrops top bar -->
+            <div class="codrops-top clearfix">
+             
+                </a>
+                
+                    </a>
+                </span>
+            </div><!--/ Codrops top bar -->
+			<header class="clearfix">
+				<span>Your Vintage Auto Guide</span>
+				<h1><span>Vintage Auto Daily</span></h1>
+				<nav class="codrops-demos">
+					
+				</nav>
+				<p>Helping car lovers appreciate vintage autos</p>
+			</header>
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="http://www.corvetteblog.com/images/various/LC470A(1).jpg">
+							<img src="images/1.jpg" />
+							<div><span>Chevy Corvette</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://s-media-cache-ak0.pinimg.com/236x/3b/ac/db/3bacdb6f835584b9a81c3fb46506885a.jpg">
+							<img src="images/2.jpg" />
+							<div><span>Pontiac GTO</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Shelby_AC_Cobra,_CSX2000.JPG/220px-Shelby_AC_Cobra,_CSX2000.JPG">
+							<img src="images/3.jpg" />
+							<div><span>Shelby Cobra</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://s-media-cache-ak0.pinimg.com/236x/52/9d/5d/529d5def9d8703a621a0e337be2e3cca.jpg">
+							<img src="images/4.jpg" />
+							<div><span>1950 Cadillac</span></div>
+						</a>
+					</li>
+					<li>	
+						<a href="http://www.jakesgeneralstore.com/sites/jakesgeneralstore.com/files/styles/medium/public/images/cars/1969MercuryCyclone/ccrp-1107-02%2B1969-mercury-cyclone.jpg?itok=vGx095Nr">
+							<img src="images/5.jpg" />
+							<div><span>Mercury Cyclone</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://lh6.googleusercontent.com/-XEI21jLQW-4/T89q3zF7wCI/AAAAAAACpOI/Cg0Mgg4Cw7k/s220/cars%2525201600x1200%252520wallpaper_www.wallfox_net_84.jpg">
+							<img src="images/6.jpg" />
+							<div><span>Vintage BMW</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://s-media-cache-ak0.pinimg.com/236x/59/ee/81/59ee819b6df735384a0c2c041db21a0c.jpg">
+							<img src="images/7.jpg" />
+							<div><span>Dodge Charger</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://s-media-cache-ak0.pinimg.com/236x/90/90/5b/90905bfa8a108c9c448b10ff484d8ad4.jpg">
+							<img src="images/8.jpg" />
+							<div><span>Ford Mustang</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="https://lh4.googleusercontent.com/-qviw8DRJBHo/T5y99gg5VAI/AAAAAAAAZaw/kL513k7FbrU/s220/yellow%252520cars%252520lamborghini%252520lamborghini%252520miura%2525201024x768%252520wallpaper_www.wallfox_net_90.jpg">
+							<img src="images/9.jpg" />
+							<div><span>1991 Ferrari</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.revvolution.com/image/albums-1-26h-65-64-0/muscle-mania-rough-tough-muscle-cars-51a3485db0a2e.jpg">
+							<img src="images/10.jpg" />
+							<div><span>Chevy Chevelle</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.carsbre.com/files/thumbs/2014/04/17/70237-Video_games_cars_vehicles_red_cars_sport_cars_challenger_gran_turismo_5_gt5_1920x1200-220x165-50.jpg">
+							<img src="images/11.jpg" />
+							<div><span>Dodge Challenger</span></div>
+						</a>
+					</li>
+					<li>
+						<a href="http://money.cnn.com/2006/01/17/Autos/funonwheels/scottsdale_concept_auctions/pontiac_bonneville.03.jpg">
+							<img src="images/12.jpg" />
+							<div><span>Pontiac Bonneville</span></div>
+						</a>
+					</li>
+				</ul>
+			</section>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+		<script type="text/javascript">
+			$(function() {
+			
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+			});
+		</script>
+    </body>
+</html>
